@@ -9,7 +9,7 @@
   background-size: cover;
 }
 
-.decor-corners  {
+.decor-corners {
   position: relative;
 }
 
@@ -107,9 +107,6 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-}
-
-.header__theme-menu-button_active {
   outline: 1px solid var(--accent-color, #FF0070);
 }
 
@@ -189,10 +186,6 @@
 
 .main__link:focus-visible {
   outline: 1px solid var(--text-color, #F1B2CE);
-}
-
-.gallery {
-  gap: 10px;
 }
 
 .main__gallery-image {
