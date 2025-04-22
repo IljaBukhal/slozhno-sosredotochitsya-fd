@@ -99,7 +99,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-button-theme-menu, #FF007066);
+  outline: 1px solid var(--hover-button-theme-menu, #FF007040);
 }
 
 .header__theme-menu-button:focus-visible {
