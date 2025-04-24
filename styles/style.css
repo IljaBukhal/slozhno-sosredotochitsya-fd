@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font, 'IBM Plex mono'), sans-serif;
+  font-family: var(--main-font, 'IBM Plex mono'), monospace;
   background-color: var(--background-color, #000028);
   background-image: var(--page-background-image, url(../images/cover-image-dark.png));
   background-position: center;
@@ -207,6 +207,7 @@
   align-items: center;
   justify-content: center;
   min-block-size: 668px;
+  block-size: 100vh;
   padding-inline: 10px;
 }
 
