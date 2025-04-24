@@ -1,8 +1,5 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: var(--main-font, 'IBM Plex mono');
+  font-family: var(--main-font, 'IBM Plex mono'), sans-serif;
   background-color: var(--background-color, #000028);
   background-image: var(--page-background-image, url(../images/cover-image-dark.png));
   background-position: center;
@@ -22,7 +19,7 @@
   right: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border: 1px solid var(--accent-color, #FF0070);
+  border: 1px solid var(--decors-color, #FF0070);
   border-left: none;
   border-bottom: none;
 }
@@ -34,7 +31,7 @@
   left: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border: 1px solid var(--accent-color, #FF0070);
+  border: 1px solid var(--decors-color, #FF0070);
   border-right: none;
   border-top: none;
 }
@@ -55,6 +52,7 @@
   position: absolute;
   top: 11px;
   right: 19px;
+  display: var(--header-decor-display, block);
 }
 
 .header__decor-element::before {
@@ -62,7 +60,7 @@
   margin-inline-end: 10px;
   display: inline-block;
   text-transform: uppercase;
-  color: var(--accent-color, #FF0070);
+  color: var(--decors-color, #FF0070);
   font-size: 18px;
 }
 
@@ -73,8 +71,8 @@
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
-  background-color: var(--accent-color, #FF0070);
-  box-shadow: 0 0 4px 2px var(--accent-color, #FF0070);
+  background-color: var(--decors-color, #FF0070);
+  box-shadow: 0 0 4px 2px var(--decors-color, #FF0070);
 }
 
 .header__theme-menu {
@@ -95,27 +93,31 @@
   padding-block: 1.5px;
   text-transform: lowercase;
   font-size: 18px;
-  color: var(--accent-color, #FF0070);
+  color: var(--theme-menu-color, #FF0070);
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-button-theme-menu, #FF007040);
+  outline: 1px solid var(--hover-button-theme-menu, rgba(255, 0, 112, 0.4));
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid  var(--accent-color, #FF0070);
+  border-bottom: 1px solid  var(--theme-menu-color, #FF0070);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid var(--accent-color, #FF0070);
+  outline: 1px solid var(--theme-menu-color, #FF0070);
 }
 
 .header__title {
   font-size: var(--header-title-font-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   color: var(--title-color, #DB00FF);
-  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  text-shadow: 4px 4px 0 var(--title-shadow-color, #FF0070);
   line-height: 82.5%;
 }
 
@@ -128,8 +130,8 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color, #FF0070);
-  color: var(--accent-text-color, #000028);
+  background-color: var(--title-decor-bg, #FF0070);
+  color: var(--title-decor-text-color, #000028);
 }
 
 /* Main */
@@ -152,7 +154,7 @@
 
 .main__section-title {
   font-size: 18px;
-  color: var(--accent-color, #FF0070);
+  color: var(--main-section-title-color, #FF0070);
 }
 
 .main__article {
@@ -172,22 +174,26 @@
 }
 
 .main__article-text {
-  color: var(--text-color, #F1B2CE);
+  color: var(--article-text-color, #F1B2CE);
   font-size: 18px;
   line-height: 1.3;
 }
 
 .main__link {
   text-decoration: none;
-  text-shadow: 2px 1px 0 var(--accent-color, #FF0070);
+  text-shadow: 2px 1px 0 var(--link-shadow-color, #FF0070);
 }
 
 .main__link:hover {
   text-decoration: underline;
 }
 
+.main__link:focus {
+  outline: none;
+}
+
 .main__link:focus-visible {
-  outline: 1px solid var(--text-color, #F1B2CE);
+  outline: 1px solid var(--link-focus-color, #F1B2CE);
 }
 
 .main__gallery-image {
@@ -208,6 +214,7 @@
   font-size: var(--header-title-font-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   color: var(--title-color, #DB00FF);
   line-height: 82.5%;
+  text-shadow: var(--footer-text-shadow, none);
 }
 
 /* Media */

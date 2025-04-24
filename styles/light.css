@@ -1,55 +1,41 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  --background-color: #FFF1F7;
-  --hover-button-theme-menu: #32312D66;
   --page-background-image: url(../images/cover-image-light.png);
-  --title-color: #FFC2E6;
   --title-shadow: 4px 4px 0 var(--accent-color);
-  --text-color: #353430;
-  --accent-color: #FF8DCB;
-  --accent-text-color: #353430;
-}
+  --header-decor-display: none;
+  --footer-text-shadow: text-shadow: var(--title-shadow, 4px 4px 0 var(--accent-color));;
 
-.theme-light .header__theme-menu {
-  --accent-color: #353430;
-}
-
-.theme-light .header__decor-element {
-  display: none;
-}
-
-.theme-light .decor-corners::after {
-  --accent-color: #353430;
-}
-
-.theme-light .decor-corners::before {
-  --accent-color: #353430;
-}
-
-.theme-light .footer__title {
-  text-shadow: var(--title-shadow, 4px 4px 0 var(--accent-color));
+  --background-color: #FFF1F7;
+  --decors-color: #353430;
+  --theme-menu-color: #353430;
+  --hover-button-theme-menu: rgba(50, 49, 45, 0.4);
+  --title-color: #FFC2E6;
+  --title-shadow-color: #FF8DCB;
+  --title-decor-bg: #FF8DCB;
+  --title-decor-text-color: #353430;
+  --main-section-title-color: #353430;
+  --article-text-color: #353430;
+  --link-shadow-color: #FF8DCB;
+  --link-focus-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: #FFF1F7;
-    --hover-button-theme-menu: #32312D66;
     --page-background-image: url(../images/cover-image-light.png);
-    --title-color: #FFC2E6;
     --title-shadow: 4px 4px 0 var(--accent-color);
-    --text-color: #353430;
-    --accent-color: #FF8DCB;
-    --accent-text-color: #353430;
+    --header-decor-display: none;
+    --footer-text-shadow: text-shadow: var(--title-shadow, 4px 4px 0 var(--accent-color));;
+  
+    --background-color: #FFF1F7;
+    --decors-color: #353430;
+    --theme-menu-color: #353430;
+    --hover-button-theme-menu: rgba(50, 49, 45, 0.4);
+    --title-color: #FFC2E6;
+    --title-shadow-color: #FF8DCB;
+    --title-decor-bg: #FF8DCB;
+    --title-decor-text-color: #353430;
+    --main-section-title-color: #353430;
+    --article-text-color: #353430;
+    --link-shadow-color: #FF8DCB;
+    --link-focus-color: #353430;
   }
 }
-
-/* Остальные стили, только при необходимости */
