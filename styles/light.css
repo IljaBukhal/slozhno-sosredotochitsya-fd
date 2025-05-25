@@ -2,7 +2,7 @@
   --page-background-image: url(../images/cover-image-light.png);
   --title-shadow: 4px 4px 0 var(--accent-color);
   --header-decor-display: none;
-  --footer-text-shadow: text-shadow: var(--title-shadow, 4px 4px 0 var(--accent-color));;
+  --footer-text-shadow: text-shadow: var(--title-shadow, 4px 4px 0 var(--accent-color));
 
   --background-color: #FFF1F7;
   --decors-color: #353430;
@@ -23,7 +23,7 @@
     --page-background-image: url(../images/cover-image-light.png);
     --title-shadow: 4px 4px 0 var(--accent-color);
     --header-decor-display: none;
-    --footer-text-shadow: text-shadow: var(--title-shadow, 4px 4px 0 var(--accent-color));;
+    --footer-text-shadow: text-shadow: var(--title-shadow, 4px 4px 0 var(--accent-color));
   
     --background-color: #FFF1F7;
     --decors-color: #353430;
